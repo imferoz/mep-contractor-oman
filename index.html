@@ -1,71 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>MEP Contractor in Oman | Alwejha Group</title>
-  <meta name="description" content="Alwejha Group is your certified MEP contractor in Oman—delivering turnkey mechanical, electrical, and plumbing services with strict safety and quality standards."/>
-  <link rel="canonical" href="https://mep-contractor-oman.alwejhagroup.com/"/>
-  <link rel="icon" type="image/webp" href="mep-contractor-oman.webp"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>Top MEP Contractor in Oman | Alwejha Group - Muscat, Salalah, Sohar</title>
+  <meta name="description" content="Alwejha Group: Oman's Leading MEP Solutions Provider. Full-Service Mechanical, Electrical & Plumbing Contractors Serving Commercial & Industrial Projects Across Oman.">
+  <link rel="canonical" href="https://mep-contractor-oman.alwejhagroup.com/">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Premium MEP Contractors in Oman | Alwejha Group Engineering Solutions">
+  <meta property="og:description" content="Certified MEP Services Across Oman - Industrial & Commercial Mechanical, Electrical & Plumbing Systems Installation">
+  <meta property="og:image" content="https://mep-contractor-oman.alwejhagroup.com/mep-contractor-oman.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Professional MEP Services in Oman | Alwejha Group">
+  <meta name="twitter:description" content="Oman's Trusted MEP Contractors - Integrated Building Systems Solutions for Commercial Projects">
+
+  <!-- Inline Critical CSS -->
   <style>
-    /* copy CSS from above, background:url('mep-contractor-oman.webp') */
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#333;background:#fff;line-height:1.6;}
-    header{background:url('mep-contractor-oman.webp')no-repeat center/cover;height:90vh;display:flex;align-items:center;justify-content:center;position:relative;text-align:center;color:#fff;}
-    header::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);}
-    header h1{z-index:1;font-size:3rem;text-shadow:2px 2px 8px rgba(0,0,0,0.8);}
-    nav{background:#003366;display:flex;justify-content:center;gap:30px;padding:15px 0;position:sticky;top:0;}
-    nav a{color:#fff;font-weight:600;text-decoration:none;}nav a:hover{color:#ffcc00;}
-    section{padding:60px 20px;max-width:1200px;margin:auto;}
-    section h2{color:#003366;margin-bottom:20px;font-size:2rem;text-align:center;}
-    section p,section ul{font-size:1rem;color:#555;text-align:center;}
-    ul{list-style:none;padding:0;}ul li{padding:8px 0;}
-    .btn{display:inline-block;padding:12px 25px;color:#fff;background:#003366;font-weight:bold;border-radius:5px;transition:background .3s;}
-    .btn:hover{background:#005599;}
-    footer{background:#003366;color:#fff;text-align:center;padding:20px;margin-top:40px;font-size:14px;}
-    @media(max-width:768px){header h1{font-size:2rem;}nav{flex-wrap:wrap;gap:15px;}}
+    :root {
+      --primary-blue: #002856;
+      --accent-teal: #00c1d4;
+      --dark-text: #2d3436;
+    }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: var(--dark-text);
+      background: #f8f9fa;
+    }
+    header {
+      background: linear-gradient(45deg, rgba(0,40,86,0.9), rgba(0,193,212,0.8)),
+                  url('mep-contractor-oman.webp') center/cover;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+      position: relative;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 4rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .hex-badge {
+      background: var(--accent-teal);
+      color: #fff;
+      padding: 8px 20px;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      display: inline-block;
+      margin: 1rem 0;
+    }
+    .cta-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: var(--primary-blue);
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      z-index: 1000;
+    }
+    .tech-btn {
+      background: var(--accent-teal);
+      color: var(--primary-blue);
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s;
+    }
+    .tech-btn:hover {
+      box-shadow: 0 4px 12px rgba(0,193,212,0.3);
+    }
+    @media (max-width: 768px) {
+      header { min-height: 60vh; }
+      .tech-grid { grid-template-columns: 1fr; }
+      .cta-bar { flex-wrap: wrap; }
+    }
   </style>
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" href="mep-contractor-oman.webp" as="image">
+  
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Alwejha Group MEP Contractors",
+    "image": "mep-contractor-oman.webp",
+    "description": "Oman's premier MEP engineering solutions provider",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Oman",
+      "addressRegion": ["Muscat", "Salalah", "Sohar", "Nizwa"]
+    },
+    "telephone": "+96879271055",
+    "email": "business@alwejhagroup.com",
+    "sameAs": ["https://www.alwejhagroup.com/"]
+  }
+  </script>
 </head>
+
 <body>
+  <header>
+    <div>
+      <h1>Advanced MEP Solutions in Oman</h1>
+      <p>Engineering Excellence Across Muscat, Salalah & Sohar</p>
+      <div style="margin-top: 2rem;">
+        <span class="hex-badge">ISO Certified</span>
+        <span class="hex-badge">OMAN STANDARD</span>
+        <span class="hex-badge">24/7 Support</span>
+      </div>
+    </div>
+  </header>
 
-  <header><h1>MEP Contractor in Oman</h1></header>
-
-  <nav>
-    <a href="https://www.alwejhagroup.com/">Home</a>
-    <a href="https://www.alwejhagroup.com/area-of-expertise">Area of Expertise</a>
-    <a href="https://www.alwejhagroup.com/our-services">Our Services</a>
-    <a href="https://www.alwejhagroup.com/contact">Contact</a>
+  <nav style="background: var(--primary-blue); padding: 1rem; position: sticky; top: 0; z-index: 100;">
+    <a href="https://www.alwejhagroup.com/" style="color: #fff; margin: 0 1.5rem;">Home</a>
+    <a href="https://www.alwejhagroup.com/area-of-expertise" style="color: #fff; margin: 0 1.5rem;">Expertise</a>
+    <a href="https://www.alwejhagroup.com/our-services" style="color: #fff; margin: 0 1.5rem;">Services</a>
+    <a href="https://www.alwejhagroup.com/contact" style="color: #fff; margin: 0 1.5rem;">Contact</a>
   </nav>
 
-  <section id="expertise">
-    <h2>Area of Expertise</h2>
-    <p>Our certified teams deliver turnkey MEP execution—covering planning, installation, testing, and maintenance for all building types.</p>
-  </section>
+  <main>
+    <section class="tech-grid">
+      <article class="service-card">
+        <h2>Mechanical Systems</h2>
+        <div class="hex-badge">HVAC • Plumbing • Fire Safety</div>
+        <p>Complete mechanical solutions for Omani climate challenges</p>
+        <ul style="text-align: left; margin-top: 1rem;">
+          <li>✓ Energy-efficient HVAC design</li>
+          <li>✓ Industrial ventilation systems</li>
+          <li>✓ Fire protection engineering</li>
+        </ul>
+      </article>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Turnkey Project Delivery</li>
-      <li>Mechanical Equipment Installation</li>
-      <li>Electrical Distribution Network</li>
-      <li>Comprehensive Plumbing Works</li>
-      <li>Regulatory Compliance Audits</li>
-    </ul>
-  </section>
+      <article class="service-card">
+        <h2>Electrical Engineering</h2>
+        <div class="hex-badge">Power • Lighting • Automation</div>
+        <p>Smart electrical solutions for modern Omani infrastructure</p>
+        <ul style="text-align: left; margin-top: 1rem;">
+          <li>✓ High-voltage distribution</li>
+          <li>✓ Building automation systems</li>
+          <li>✓ Renewable energy integration</li>
+        </ul>
+      </article>
 
-  <section id="clients">
-    <h2>Our Clients</h2>
-    <p>We partner with real estate developers, industrial facilities, and institutions across Oman—view their success stories on our main site.</p>
-  </section>
+      <article class="service-card">
+        <h2>Plumbing Networks</h2>
+        <div class="hex-badge">Water • Drainage • Treatment</div>
+        <p>Advanced plumbing systems for commercial complexes</p>
+        <ul style="text-align: left; margin-top: 1rem;">
+          <li>✓ Water conservation systems</li>
+          <li>✓ Greywater recycling</li>
+          <li>✓ Stormwater management</li>
+        </ul>
+      </article>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p><a class="btn" href="https://www.alwejhagroup.com/contact">Get in Touch</a></p>
-  </section>
+    <section style="text-align: center; padding: 3rem 1rem; background: #fff;">
+      <h2>MEP Services Across Oman</h2>
+      <div style="max-width: 800px; margin: 2rem auto;">
+        <p>We engineer systems for all regions:</p>
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem 0;">
+          <div class="hex-badge" style="background: var(--primary-blue);">Muscat</div>
+          <div class="hex-badge" style="background: var(--primary-blue);">Salalah</div>
+          <div class="hex-badge" style="background: var(--primary-blue);">Sohar</div>
+          <div class="hex-badge" style="background: var(--primary-blue);">Nizwa</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <section style="text-align:center;padding:40px 0;background:#f4f4f4;">
-    <a class="btn" href="https://www.alwejhagroup.com/" style="background:#ffcc00;color:#003366;">Visit Our Main Website</a>
-  </section>
+  <div class="cta-bar">
+    <a href="https://wa.me/96879271055" class="tech-btn" aria-label="WhatsApp Chat">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp
+    </a>
+    <a href="tel:+96879271055" class="tech-btn" aria-label="Call Now">
+      📞 Call Now
+    </a>
+    <a href="mailto:business@alwejhagroup.com" class="tech-btn" aria-label="Email Us">
+      ✉️ Email
+    </a>
+  </div>
 
-  <footer>&copy; 2025 Alwejha Group. All rights reserved.</footer>
+  <footer style="background: var(--primary-blue); color: #fff; padding: 2rem; text-align: center;">
+    <p>© 2025 Alwejha Group - MEP Engineering Leaders in Oman</p>
+    <nav style="margin-top: 1rem;">
+      <a href="https://www.alwejhagroup.com/privacy" style="color: var(--accent-teal); margin: 0 1rem;">Privacy Policy</a>
+      <a href="https://www.alwejhagroup.com/certifications" style="color: var(--accent-teal); margin: 0 1rem;">Certifications</a>
+      <a href="https://www.alwejhagroup.com/projects" style="color: var(--accent-teal); margin: 0 1rem;">Project Portfolio</a>
+    </nav>
+  </footer>
+
+  <!-- Lazy Load Images -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => img.loading = 'lazy');
+    });
+  </script>
 </body>
 </html>
